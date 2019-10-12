@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ocupacion">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="OCUPACIÓN."
+        android:background="@color/colorAzulOscuro"
+        android:textColor="@color/colorBlanco"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:paddingTop="10dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginHorizontal="20dp">
+        <TableRow>
+            <TextView
+                android:text="NIT: "/>
+
+            <EditText android:layout_width="263dp"
+                android:id="@+id/et_ocupacion_nit"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:text="Ocupación" />
+
+            <EditText
+                android:id="@+id/et_ocupacion_ocupacion"
+                />
+        </TableRow>
+        <Button
+            android:text="Cambiar ocupación"
+            android:id="@+id/btn_ocupacion_cambiar_ocupacion"/>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAzulClaro"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAzulClaro"
+                android:text="NIT - USUARIO - OCUPACIÓN"
+                android:textAlignment="center" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/lv_ocupacion_lista"
+                >
+            </ListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

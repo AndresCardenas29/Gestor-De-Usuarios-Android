@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaEmpleados">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAzulOscuro"
+        android:paddingTop="10dp"
+        android:text="Lista de empleados."
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TableRow>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="actualizar"
+                android:id="@+id/btn_lista_empleados_consultar"
+                />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="consultar NIT"
+                android:id="@+id/btn_lista_empleados_consultarid"/>
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="consulta user"
+                android:id="@+id/btn_lista_empleados_usuarios"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TableRow>
+            <TextView
+                android:textAlignment="center"
+                android:text="Identificador: "/>
+
+            <EditText
+                android:layout_width="213dp"
+                android:inputType="textEmailSubject"
+                android:id="@+id/et_lista_empleados_id"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textAlignment="center"
+                android:text="Usuario: "/>
+
+            <EditText
+                android:inputType="textEmailSubject"
+                android:layout_width="213dp"
+                android:id="@+id/et_lista_empleados_usuario"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGris">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIT - Usuario - Ocupacion  - Salario - Horario"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:drawableBottom="@color/colorAzulOscuro2"/>
+
+            <ListView
+                android:id="@+id/lvLista"
+                android:layout_width="match_parent"
+                android:layout_height="270dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HorarioDeTrabajo"
+    android:background="@color/colorGris">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Horario de trabajo."
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorBlanco"
+        android:textAlignment="center"
+        android:background="@color/colorAzulOscuro"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAzulClaro"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nit del usuario"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIT del usuario"
+            android:textAlignment="center"
+            android:id="@+id/horario_trabajo_NIT"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Horario de trabajo"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horario de trabajo"
+            android:textAlignment="center"
+            android:id="@+id/horario_trabajo_HorarioTrabajo"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambiar horario de trabajo"
+            android:id="@+id/horario_trabajo_guardar"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGris">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIT - Nombre - Salario"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="14sp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:textAlignment="center"
+                android:id="@+id/list_horario_trabajo">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

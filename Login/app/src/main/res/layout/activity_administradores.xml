@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Administradores">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAzulOscuro"
+        android:paddingTop="10dp"
+        android:text="ADMINISTRADORES"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrador = 1 | Usuario normal = 0"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:background="@color/colorRojoOscuro"
+        android:textColor="@color/colorBlanco"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="115dp"
+                android:text="NIT"
+                android:textAlignment="center" />
+
+            <EditText android:hint="NIT"
+                android:id="@+id/et_administradores_nit"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="115dp"
+                android:text="TIPO"
+                android:textAlignment="center" />
+
+            <EditText android:hint="Tipo"
+                android:id="@+id/et_administradores_tipo"/>
+        </TableRow>
+        <Button
+            android:text="guardar"
+            android:id="@+id/btn_administradores_guardar"/>
+
+    </TableLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:id="@+id/list_administradores">
+
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

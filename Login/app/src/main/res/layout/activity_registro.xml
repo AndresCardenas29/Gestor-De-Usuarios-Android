@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="REGITRO DE USUARIO."
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="13dp"
+        android:background="@color/colorRojoOscuro"
+        android:textColor="@color/colorBlanco"
+        />
+
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="159dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@drawable/register" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/txt_registro_nombre"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Nombre y apellido"
+                android:textAlignment="center"
+                android:inputType="textEmailSubject"
+                />
+            <EditText
+                android:id="@+id/txt_registro_nombreusuario"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Nombre de usuario"
+                android:textAlignment="center"
+                android:inputType="textEmailSubject"
+                />
+            <EditText
+                android:id="@+id/txt_registro_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="E-mail"
+                android:textAlignment="center"
+                android:inputType="textEmailSubject"
+                />
+            <EditText
+                android:id="@+id/txt_registro_ocupacion"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Ocupacion"
+                android:textAlignment="center"
+                android:inputType="textEmailSubject"
+                />
+
+            <EditText
+                android:id="@+id/txt_registro_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Contraseña"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                />
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Registrarse"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
