@@ -2,6 +2,9 @@
 ##
 
 _Aplicación movil Android básica diseñada para gestionar los empleados de una empreza,la aplicación movil también puede ser usada por comandos de voz ya sea por el administrador o empleado. La aplicacion mostrará:_
+
+<img src="https://github.com/AndresCardenas29/Gestor_De_Usuarios_Android/blob/master/VistaInterfas/img_proyect_2.png" width="250px">
+
 * Registro
   * Nombres y apellidos
   * Nombre de usuario
@@ -11,11 +14,15 @@ _Aplicación movil Android básica diseñada para gestionar los empleados de una
   
 _El codigo NIT se auto genera al crear el usuario, y el administrador por medio de ese codigo NIT puede editar todos sus datos asignar su salario con las horas extras, un horario de trabajo y ocupacion._
 
+<img src="https://github.com/AndresCardenas29/Gestor_De_Usuarios_Android/blob/master/VistaInterfas/img_proyect_1.png" width="250px">
+
 * Inicio de sesión
   * Usuario
   * Contraseña
 
 _Dependiendo del usuario, el  login lo llevara al menu de empleado o administrador._
+
+<img src="https://github.com/AndresCardenas29/Gestor_De_Usuarios_Android/blob/master/VistaInterfas/img_proyect_4.png" width="250px">
 
 * Empleado
   * Codigo NIT
@@ -30,6 +37,8 @@ _Dependiendo del usuario, el  login lo llevara al menu de empleado o administrad
   * Calcular saldo con las horas extras
 
 _El empleado podra ver cuantas horas extras ha llevado y calcular su saldo con horas extras._
+
+<img src="https://github.com/AndresCardenas29/Gestor_De_Usuarios_Android/blob/master/VistaInterfas/img_proyect_6.png" width="250px">
 
 * Administrador
   * Lista de empleados
